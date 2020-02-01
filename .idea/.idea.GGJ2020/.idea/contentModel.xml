@@ -10,6 +10,7 @@
           <e p="FPS.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="TimeManager.cs" t="Include" />
+          <e p="TransitionController.cs" t="Include" />
           <e p="Utils.cs" t="Include" />
         </e>
       </e>

@@ -13,6 +13,7 @@ public class ForceCommand : ActionCommand
 
     public override void OnCommand()
     {
+        ObjectRigidbody.isKinematic = false;
         ObjectRigidbody.AddForce(ForceVector);
     }
 }
