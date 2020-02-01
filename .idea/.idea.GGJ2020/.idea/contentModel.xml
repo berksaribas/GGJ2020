@@ -6,6 +6,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="ActionCommand.cs" t="Include" />
+          <e p="Destroyable.cs" t="Include" />
           <e p="ForceCommand.cs" t="Include" />
           <e p="FPS.cs" t="Include" />
           <e p="Player.cs" t="Include" />

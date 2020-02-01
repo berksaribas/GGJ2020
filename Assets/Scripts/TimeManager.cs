@@ -20,7 +20,6 @@ public class TimeManager : MonoBehaviour
     
     private void Awake()
     {
-        PastRigidbodies = PastContainer.GetComponentsInChildren<Rigidbody>();
         _futureLayer = LayerMask.NameToLayer("FutureLayer");
         _pastLayer = LayerMask.NameToLayer("PastLayer");
         _playerLayer = LayerMask.NameToLayer("PlayerLayer");
@@ -94,6 +93,8 @@ public class TimeManager : MonoBehaviour
 
     private void Simulate()
     {
+        PastRigidbodies = PastContainer.GetComponentsInChildren<Rigidbody>();
+
         foreach (var pastRigidbody in PastRigidbodies)
         {
             pastRigidbody.velocity = Vector3.zero;
