@@ -31,6 +31,7 @@ namespace Cement
             _rigidbody.angularVelocity = Vector3.zero;
             _rigidbody.mass = 0;
             _rigidbody.isKinematic = true;
+            _rigidbody.collisionDetectionMode = CollisionDetectionMode.Discrete;
         
             //    Check if we collided with a CementGroup or a free rigidbody
             var cementGroup = collision.rigidbody.GetComponent<CementGroup>();
