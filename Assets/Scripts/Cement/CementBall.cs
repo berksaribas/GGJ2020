@@ -2,8 +2,6 @@
 
 namespace Cement
 {
-    
-
     [RequireComponent(typeof(SphereCollider))]
     public class CementBall : MonoBehaviour
     {
@@ -30,9 +28,9 @@ namespace Cement
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
             _rigidbody.mass = 0;
+            _rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
             _rigidbody.isKinematic = true;
-            _rigidbody.collisionDetectionMode = CollisionDetectionMode.Discrete;
-        
+
             //    Check if we collided with a CementGroup or a free rigidbody
             var cementGroup = collision.rigidbody.GetComponent<CementGroup>();
             if (cementGroup != null)
@@ -41,7 +39,6 @@ namespace Cement
             }
             else
             {
-                print("CementBall created");
                 var newCementGroup = CementManager.Instance.InstantiateCementGroup(transform.position).GetComponent<CementGroup>();
                 newCementGroup.AddAndDestroy(_rigidbody);
                 newCementGroup.AddAndDestroy(collision.rigidbody);
