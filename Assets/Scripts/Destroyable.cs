@@ -36,6 +36,7 @@ public class Destroyable : MonoBehaviour
                 layer = TimeManager.Instance.GetCurrentTimespaceLayer();
             }
             Utils.SetLayerRecursively(newObj, layer);
+            gameObject.SetActive(false);
             Destroy(gameObject);
             isDone = true;
         }
