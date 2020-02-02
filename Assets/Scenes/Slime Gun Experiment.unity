@@ -327,31 +327,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Column (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4768756661537766681, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Mass
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53d40fa7b6b0cfb45ada78960cdbccf6, type: 3}
 --- !u!1001 &562984123
@@ -421,31 +396,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Column (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 4768756661537766681, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Mass
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53d40fa7b6b0cfb45ada78960cdbccf6, type: 3}
 --- !u!1001 &796946781
@@ -514,31 +464,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Column (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768756661537766681, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Mass
-      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53d40fa7b6b0cfb45ada78960cdbccf6, type: 3}
@@ -703,31 +628,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Column
       objectReference: {fileID: 0}
-    - target: {fileID: 4768756661537766681, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Mass
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53d40fa7b6b0cfb45ada78960cdbccf6, type: 3}
 --- !u!1001 &1654700078
@@ -797,31 +697,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Column (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 4768756661537766681, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Mass
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53d40fa7b6b0cfb45ada78960cdbccf6, type: 3}
 --- !u!1001 &1832039557
@@ -837,7 +712,7 @@ PrefabInstance:
       objectReference: {fileID: 95681254}
     - target: {fileID: 1397739048, guid: f4a865239366f034faed9b13228d8056, type: 3}
       propertyPath: SecondsToCooldown
-      value: 0.5
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5032273083317844104, guid: f4a865239366f034faed9b13228d8056,
         type: 3}
@@ -967,31 +842,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Column (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768756661537766681, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076018203330935521, guid: 53d40fa7b6b0cfb45ada78960cdbccf6,
-        type: 3}
-      propertyPath: m_Mass
-      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53d40fa7b6b0cfb45ada78960cdbccf6, type: 3}

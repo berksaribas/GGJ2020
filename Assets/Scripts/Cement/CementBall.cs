@@ -9,12 +9,14 @@ namespace Cement
     {
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.rigidbody == null || collision.rigidbody.isKinematic)
+            if (collision.rigidbody == null || (collision.rigidbody.isKinematic && collision.collider.GetComponent<CementBall>() == null))
             {
                 return;
             }
+            
+            var _rigidbody = GetComponent<Rigidbody>();
 
-            if (GetComponentInParent<CementGroup>() != null)
+            if (_rigidbody.isKinematic)
             {
                 return;
             }
@@ -23,9 +25,8 @@ namespace Cement
             Destroy(GetComponent<DestroyTimer>());
             
             //    Increase collider size
-            transform.localScale *= 1.9f;
+            transform.localScale *= Random.Range(1.8f, 2.6f);
 
-            var _rigidbody = GetComponent<Rigidbody>();
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
             _rigidbody.mass = 0;
