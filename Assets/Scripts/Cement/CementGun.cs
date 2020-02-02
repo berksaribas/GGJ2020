@@ -1,28 +1,28 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CementGun : MonoBehaviour
+namespace Cement
 {
-    public CementManager CementManager;
-    public Transform SpawnPoint;
-    public float ShotForce;
-
-    public float SecondsToCooldown;
-    private float lastShotTime = 0;
-
-    void Update()
+    public class CementGun : MonoBehaviour
     {
-        if (Input.GetMouseButton(0) && Time.time - lastShotTime >= SecondsToCooldown)
-        {
-            var cementRigidbody = CementManager.InstantiateCement(SpawnPoint.position);
-            cementRigidbody.AddForce(
-                transform.rotation * (Vector3.forward * ShotForce),
-                ForceMode.VelocityChange
-            );
+        public CementManager CementManager;
+        public Transform SpawnPoint;
+        public float ShotForce;
 
-            lastShotTime = Time.time;
+        public float SecondsToCooldown;
+        private float lastShotTime = 0;
+
+        void Update()
+        {
+            if (Input.GetMouseButton(0) && Time.time - lastShotTime >= SecondsToCooldown)
+            {
+                var cementRigidbody = CementManager.InstantiateCement(SpawnPoint.position);
+                cementRigidbody.AddForce(
+                    transform.rotation * (Vector3.forward * ShotForce),
+                    ForceMode.VelocityChange
+                );
+
+                lastShotTime = Time.time;
+            }
         }
     }
 }
