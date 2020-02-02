@@ -42,11 +42,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c9b74b7abeeb542b777a3527a95fa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletHolder: {fileID: 0}
+  MaxStorage: 100
+  Storage: 20.400383
+  CostPerShot: 0.2
+  CementManager: {fileID: 0}
   SpawnPoint: {fileID: 176386178}
-  BulletPrefab: {fileID: 546967087672324565, guid: a85508a9adc248c4f93282e50a793e76,
-    type: 3}
-  ShotForce: 20
+  ShotForce: 14
+  DirectionFuzz: 3
+  SecondsToCooldown: 0.04
 --- !u!1001 &760302314696878022
 PrefabInstance:
   m_ObjectHideFlags: 0
