@@ -18,8 +18,13 @@ public class Destroyable : MonoBehaviour
         {
             return;
         }
+
+        var mass = other.rigidbody != null ? other.rigidbody.mass : 1;
+        var impact = 0.5f*mass*Mathf.Pow(other.relativeVelocity.magnitude,2);
+
+        //Debug.Log($"{other.gameObject.name} collided to {gameObject.name} with an impact value of {impact}" );
         
-        if(other.relativeVelocity.magnitude > 15f)
+        if(impact > 15f)
         {
             var newObj = Instantiate(DestroyedVersion, transform.position, transform.rotation, transform.parent);
             newObj.transform.localScale = transform.localScale;
