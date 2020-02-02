@@ -6,7 +6,7 @@ using UnityEngine;
 public class FPS : MonoBehaviour
 {
 
-    private float speed = 2.0f;
+    public float Speed = 2.0f;
     private float m_MovX;
     private float m_MovY;
     private Vector3 m_moveHorizontal;
@@ -39,7 +39,7 @@ public class FPS : MonoBehaviour
         m_moveHorizontal = transform.right * m_MovX;
         m_movVertical = transform.forward * m_MovY;
 
-        m_velocity = (m_moveHorizontal + m_movVertical).normalized * speed;
+        m_velocity = (m_moveHorizontal + m_movVertical).normalized * Speed;
 
         //mouse movement 
         m_yRot = Input.GetAxisRaw("Mouse X");

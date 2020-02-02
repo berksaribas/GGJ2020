@@ -1,4 +1,5 @@
 ﻿using System;
+using Cement;
 using UnityEngine;
 
 public class Destroyable : MonoBehaviour
@@ -12,10 +13,16 @@ public class Destroyable : MonoBehaviour
         {
             return;
         }
+
+        if (other.collider.GetComponent<CementBall>() != null)
+        {
+            return;
+        }
         
         if(other.relativeVelocity.magnitude > 15f)
         {
             var newObj = Instantiate(DestroyedVersion, transform.position, transform.rotation, transform.parent);
+            newObj.transform.localScale = transform.localScale;
             var layer = 0;
             if (TimeManager.Instance != null)
             {
