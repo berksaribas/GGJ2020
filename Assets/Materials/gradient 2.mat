@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: gradient 2
-  m_Shader: {fileID: -6465566751694194690, guid: e6aee3b50e229db49bc97f0d49351022,
+  m_Shader: {fileID: -6465566751694194690, guid: 4595cdb32e9ebbc4f959301e2d20b084,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -78,6 +78,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - Vector2_94C72D1B: {r: -0.03, g: 0.02, b: 0, a: 0}
     - _Color: {r: 0.7647059, g: 0.6820785, b: 0.39, a: 1}
     - _Color1: {r: 0.8091109, g: 0.3411765, b: 1, a: 1}
     - _Color2: {r: 0.98039216, g: 0.33627456, b: 0.44856465, a: 1}
