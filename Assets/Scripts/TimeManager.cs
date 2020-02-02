@@ -7,6 +7,8 @@ public enum Timespace
 }
 public class TimeManager : MonoBehaviour
 {
+    public static TimeManager Instance;
+    
     public GameObject PastContainer;
     public Rigidbody[] PastRigidbodies;
     public Camera MainCamera;
@@ -20,6 +22,8 @@ public class TimeManager : MonoBehaviour
     
     private void Awake()
     {
+        Instance = this;
+        
         _futureLayer = LayerMask.NameToLayer("FutureLayer");
         _pastLayer = LayerMask.NameToLayer("PastLayer");
         _playerLayer = LayerMask.NameToLayer("PlayerLayer");
@@ -56,6 +60,39 @@ public class TimeManager : MonoBehaviour
         _stateChangeTime = Time.realtimeSinceStartup;
     }
 
+    public Transform GetCurrentTimespaceTransform()
+    {
+        if (_currentSpace == Timespace.PAST)
+        {
+            return PastContainer.transform;
+        }
+        else if (_currentSpace == Timespace.FUTURE || _currentSpace == Timespace.SIMULATION || _currentSpace == Timespace.GOBACK)
+        {
+            return _futureContainer.transform;
+        }
+
+        return null;
+    }
+
+    public int GetCurrentTimespaceLayer()
+    {
+        if (_currentSpace == Timespace.PAST)
+        {
+            return _pastLayer;
+        }
+        else if (_currentSpace == Timespace.FUTURE || _currentSpace == Timespace.SIMULATION || _currentSpace == Timespace.GOBACK)
+        {
+            return _futureLayer;
+        }
+        
+        return 0;
+    }
+    
+    public bool CanPlayerInteract()
+    {
+        return _currentSpace == Timespace.PAST || _currentSpace == Timespace.FUTURE;
+    }
+    
     private void Update()
     {
         if (_currentSpace == Timespace.SIMULATION)

@@ -13,7 +13,8 @@ namespace Cement
 
         void Update()
         {
-            if (Input.GetMouseButton(0) && Time.time - lastShotTime >= SecondsToCooldown)
+            bool isStateAvailableForShooting = !TimeManager.Instance || TimeManager.Instance.CanPlayerInteract();
+            if (Input.GetMouseButton(0) && isStateAvailableForShooting && Time.time - lastShotTime >= SecondsToCooldown)
             {
                 var cementRigidbody = CementManager.InstantiateCement(SpawnPoint.position);
                 cementRigidbody.AddForce(

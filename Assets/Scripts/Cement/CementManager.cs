@@ -16,13 +16,37 @@ namespace Cement
 
         public Rigidbody InstantiateCementGroup(Vector3 spawnPosition)
         {
-            var cementGroup = Instantiate(CementGroupPrefab, spawnPosition, transform.rotation, transform);
+            var targetTransform = transform;
+            var layer = 0;
+            if (TimeManager.Instance != null)
+            {
+                if(TimeManager.Instance.GetCurrentTimespaceTransform() != null)
+                {
+                    targetTransform = TimeManager.Instance.GetCurrentTimespaceTransform();
+                }
+
+                layer = TimeManager.Instance.GetCurrentTimespaceLayer();
+            }
+            var cementGroup = Instantiate(CementGroupPrefab, spawnPosition, transform.rotation, targetTransform);
+            Utils.SetLayerRecursively(cementGroup, layer);
             return cementGroup.GetComponent<Rigidbody>();
         }
 
         public Rigidbody InstantiateCement(Vector3 spawnPosition)
         {
-            var cementBall = Instantiate(CementBallPrefab, spawnPosition, transform.rotation, transform);
+            var targetTransform = transform;
+            var layer = 0;
+            if (TimeManager.Instance != null)
+            {
+                if(TimeManager.Instance.GetCurrentTimespaceTransform() != null)
+                {
+                    targetTransform = TimeManager.Instance.GetCurrentTimespaceTransform();
+                }
+
+                layer = TimeManager.Instance.GetCurrentTimespaceLayer();
+            }
+            var cementBall = Instantiate(CementBallPrefab, spawnPosition, transform.rotation, targetTransform);
+            Utils.SetLayerRecursively(cementBall, layer);
             return cementBall.GetComponent<Rigidbody>();
         }
     }
