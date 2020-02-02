@@ -10,7 +10,8 @@ namespace Cement
         public Transform SpawnPoint;
         public float ShotForce;
         public float DirectionFuzz;
-
+        public float CementScale;
+        
         public float SecondsToCooldown;
         private float lastShotTime = 0;
 
@@ -32,6 +33,7 @@ namespace Cement
                     * (Vector3.forward * ShotForce),
                     ForceMode.VelocityChange
                 );
+                cementRigidbody.transform.localScale *= CementScale;
 
                 Storage = Mathf.Max(Storage - CostPerShot, 0f);
 
