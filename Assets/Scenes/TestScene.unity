@@ -41763,7 +41763,7 @@ PrefabInstance:
       objectReference: {fileID: 1321292530}
     - target: {fileID: 1397739048, guid: f4a865239366f034faed9b13228d8056, type: 3}
       propertyPath: ShotForce
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1397739048, guid: f4a865239366f034faed9b13228d8056, type: 3}
       propertyPath: SecondsToCooldown
@@ -41776,6 +41776,14 @@ PrefabInstance:
     - target: {fileID: 1397739048, guid: f4a865239366f034faed9b13228d8056, type: 3}
       propertyPath: CementScale
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397739048, guid: f4a865239366f034faed9b13228d8056, type: 3}
+      propertyPath: MaxStorage
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397739048, guid: f4a865239366f034faed9b13228d8056, type: 3}
+      propertyPath: CostPerShot
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5032273083317844103, guid: f4a865239366f034faed9b13228d8056,
         type: 3}
@@ -48109,6 +48117,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealtBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480987370236213681, guid: 48a25566cc4c05947b5e4b3a0db5db3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4480987370236213693, guid: 48a25566cc4c05947b5e4b3a0db5db3e,
         type: 3}
