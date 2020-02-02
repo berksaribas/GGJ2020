@@ -49,6 +49,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 176386178}
   ShotForce: 14
   DirectionFuzz: 3
+  CementScale: 1
   SecondsToCooldown: 0.04
 --- !u!1001 &760302314696878022
 PrefabInstance:
