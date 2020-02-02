@@ -66,13 +66,22 @@ namespace Cement
         public void AddAndDestroy(Rigidbody rBody)
         {
             print($"{name} adding {rBody.name}");
-//        rBody.velocity = Vector3.zero;
 
-            Rigidbody.mass += rBody.mass;
-            var t = rBody.transform;
+            var otherMass = rBody.mass;
+            var otherCenterOfMass = rBody.worldCenterOfMass;
             Destroy(rBody);
 
-            t.SetParent(transform);
+            var selfMass = Rigidbody.mass;
+            var selfCenterOfMass = Rigidbody.worldCenterOfMass;
+
+            Rigidbody.centerOfMass = Vector3.zero;
+
+            rBody.transform.SetParent(transform);
+
+            Rigidbody.mass += otherMass;
+            Rigidbody.centerOfMass = transform.InverseTransformPoint(
+                (otherCenterOfMass * otherMass + selfCenterOfMass * selfMass) / (otherMass + selfMass)
+            );
         }
 
         public void AddAndDestroy(CementGroup cementGroup)
